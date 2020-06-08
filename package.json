@@ -1,0 +1,31 @@
+{
+  "name": "Dins-Portfolio",
+  "version": "1.0.0",
+  "description": "Din ashkenazi Website and Graphic Designer Portfolio",
+  "author": "Din ashkenazi",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "gsap": "^3.2.6",
+    "nodemailer": "^6.4.6",
+    "nuxt": "^2.0.0",
+    "storyblok-nuxt": "^1.2.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^2.0.0",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "@nuxtjs/vuetify": "^1.0.0",
+    "babel-eslint": "^10.0.1",
+    "css-loader": "^3.5.3",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "sass-loader": "^8.0.2"
+  }
+}
