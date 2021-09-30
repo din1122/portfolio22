@@ -1,9 +1,10 @@
 <template>
+ <v-flex xl9 md10 sm11 ma-auto>
   <v-container fluid>
     <section class="home">
       <v-layout wrap fill-height>
-        <v-flex xl5 md8 align-end d-flex class="left-home">
-          <v-card flat class="home-text-card" style="background:transparent;">
+        <v-flex xl5 lg5 md8 align-end d-flex class="left-home">
+          <v-card flat class="home-text-card" style="background: transparent;">
             <div class="d-block">
               <span class="span-title">DIN ASHKENAZI</span>
               <h1>Website</h1>
@@ -15,26 +16,27 @@
               </p>
               <span>
                 <span class="link bolded-span pa-2">
-                  <nuxt-link to="/">
-                    View Projects
+                       <nuxt-link to="/about">
+                    About me
                   </nuxt-link>
                 </span>
                 or
 
                 <span class="link bolded-span pa-2">
-                  <nuxt-link to="/about">
-                    Read About me
+
+                  <nuxt-link to="/Contact">
+                    Contact me
                   </nuxt-link>
                 </span>
               </span>
             </div>
           </v-card>
         </v-flex>
-        <v-flex xl7 xs12 md12 @mouseenter="hover = true" class="right-home">
-          <div class="backdrop-img" :class="{ backdropactive: hover }"></div>
+        <v-flex xl7 xs12 md12 lg7 @mouseenter="hover = true" class="right-home">
+         <!--  <div class="backdrop-img" :class="{ backdropactive: hover }"></div> -->
           <v-lazy
             :options="{
-              threshold: 0.5
+              threshold: 0.5,
             }"
             min-height="200"
             transition="fade-transition"
@@ -48,7 +50,7 @@
         </v-flex>
       </v-layout>
     </section>
-    <!-- case studies 
+    <!-- case studies
      :position="{'20vh center': $vuetify.breakpoint.mdAndDown,'center center ': $vuetify.breakpoint.lgAndUp }"
     -->
     <section pt-5>
@@ -108,6 +110,7 @@
 
     <!-- contact -->
   </v-container>
+ </v-flex>
 </template>
 
 <script>
@@ -118,52 +121,52 @@ export default {
   data() {
     return {
       hover: false,
-      link: true
+      link: true,
     };
   },
   components: {
     letswork,
     CaseStudies,
-    PersonalProjects
+    PersonalProjects,
   },
   async asyncData(context) {
     const projects = await context.app.$storyapi
       .get("cdn/stories", {
-        version: "draft",
-        starts_with: "projects"
+        version: "published",
+        starts_with: "projects",
       })
-      .then(res => {
+      .then((res) => {
         return {
-          projects: res.data.stories.map(bp => {
+          projects: res.data.stories.map((bp) => {
             return {
               id: bp.slug,
               title: bp.content.title,
               year: bp.content.year,
-              thumbnail: bp.content.thumbnail
+              thumbnail: bp.content.thumbnail,
             };
-          })
+          }),
         };
       });
     const personalprojects = await context.app.$storyapi
       .get("cdn/stories", {
         version: "draft",
-        starts_with: "personalprojects"
+        starts_with: "personalprojects",
       })
-      .then(res => {
+      .then((res) => {
         return {
-          preproject: res.data.stories.map(bp => {
+          preproject: res.data.stories.map((bp) => {
             return {
               id: bp.slug,
               title: bp.content.title,
               year: bp.content.year,
-              thumbnail: bp.content.thumbnail
+              thumbnail: bp.content.thumbnail,
             };
-          })
+          }),
         };
       });
 
     return { personalprojects, projects };
-  }
+  },
 };
 </script>
 

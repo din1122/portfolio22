@@ -1,5 +1,6 @@
 <template>
   <div>
+    <v-flex xl9 md10 sm11 ma-auto>
     <v-layout container wrap justify-center align-center>
       <v-flex
         class="about-container justify-center align-center d-grid
@@ -35,8 +36,7 @@
                 DESIGN SERVICES
               </span>
               <p class="services-text">
-                Art Direction / Web & Mobile / Brand identity / UI & UX /
-                Iconography / Animation / Graphic design
+              Adobe XD / Photoshop / Illustrator / InDesign / After Effecs
               </p>
             </v-card>
           </v-col>
@@ -60,7 +60,7 @@
               </span>
               <p class="services-text">
                 Server Setup / Landing page / Portfolios / Blogs / Web
-                Applications / SPA / WordPress
+                Applications / SPA
               </p>
             </v-card>
           </v-col>
@@ -70,8 +70,8 @@
                 TOOLS I USE
               </span>
               <p class="services-text">
-                CSS / HTML / SCSS / JQuary / JavaScript / Vuejs / Vuex / Nuxtjs
-                / GSPA Tweenmax / Nginx / Webpack / Headless CMS
+                  CSS / HTML / SCSS / JQuary / JavaScript / Vuejs / Vuex / Nuxtjs
+                / GSPA Tweenmax / Nginx / Webpack / Headless CMS / WebFlow / Wordpress
               </p>
             </v-card>
           </v-col>
@@ -85,10 +85,8 @@
                 <span class="span-title">EXPERIENCE</span>
                 <h2>Over 6 years of experience</h2>
                 <p>
-                  I've been coding and designing from high school and just feel
-                  in love with it. I've been lucky to work as a full-stack
-                  developer and freelancer designer for the last 5 year and
-                  established relationships with amazing clients.
+                I've been coding and designing since high school and just fell in love with it. I've been lucky to work as a full-stack
+                  developer and freelancer designer for the last 5 year and established relationships with amazing clients.
                 </p>
               </div>
             </v-card-title>
@@ -100,6 +98,7 @@
         <letswork />
       </v-flex>
     </v-layout>
+    </v-flex>
   </div>
 </template>
 

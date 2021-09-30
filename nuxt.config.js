@@ -1,13 +1,13 @@
 import colors from "vuetify/es5/util/colors";
 
 export default {
-    mode: "spa",
+    srr: "false",
     /*
      ** Headers of the page
      */
     head: {
-        titleTemplate: "%s - " + process.env.npm_package_name,
-        title: process.env.npm_package_name || "",
+        titleTemplate: "Din Ashkenazi Portfolio - UI UX & Web Designer",
+        title: "Din Ashkenazi Portfolio - UI UX & Web Designer",
         meta: [{
                 charset: "utf-8"
             },
@@ -18,7 +18,7 @@ export default {
             {
                 hid: "description",
                 name: "description",
-                content: process.env.npm_package_description || ""
+                content: "This is my UI UX & Web design Portfolio, I have 6 years of experience of web design and developement as well as graphic design and visualization "
             }
         ],
         link: [{
@@ -45,6 +45,7 @@ export default {
      ** Global CSS
      */
     css: ["~/assets/css/style.scss"],
+    // css: [],
     /*
      ** Plugins to load before mounting the App
      */
@@ -54,8 +55,10 @@ export default {
      */
     buildModules: [
         // Doc: https://github.com/nuxt-community/eslint-module
-        //"@nuxtjs/eslint-module",
-        "@nuxtjs/vuetify"
+        "@nuxtjs/eslint-module",
+        "@nuxtjs/vuetify", ['@nuxtjs/google-analytics', {
+            id: 'UA-89031274-13'
+        }],
     ],
     /*
      ** Nuxt.js modules
@@ -63,7 +66,10 @@ export default {
     modules: [
         [
             "storyblok-nuxt",
-            { accessToken: "Z1vEJeJIo18ccN3Qu6Wn5gtt", cacheProvider: "memory" }
+            {
+                accessToken: "oPgM7IYl1i1JZQm6ud4RJwtt",
+                cacheProvider: "memory"
+            }
         ]
     ],
     /*
@@ -78,14 +84,16 @@ export default {
     },
     /*
      ** Build configuration
+
+
+    // serverMiddleware: [
+    //     { path: '/api', handler: '~/api/nodemailer.js' }
+    // ],
      */
-    serverMiddleware: [
-        '~/api/nodemailer'
-    ],
     axios: {},
     build: {
         vendor: ['axios'],
-        analyze: true,
+        analyze: false,
         extractCSS: true,
 
         /*

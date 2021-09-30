@@ -1,5 +1,6 @@
 <template>
   <div>
+    <v-flex xl9 md10 sm11 ma-auto>
     <v-container fluid fill-height>
       <transition>
         <div v-if="show" class="text-container">
@@ -8,7 +9,7 @@
       </transition>
 
       <v-layout wrap row align-center fill-height>
-        <v-flex xl12 xs10 ma-auto>
+        <v-flex xl12 xs10 sm12 ma-auto>
           <v-layout wrap class="porject-layout">
             <v-flex xl6 align-self-center>
               <v-layout column>
@@ -37,7 +38,7 @@
                 </v-flex>
               </v-layout>
             </v-flex>
-            <v-flex xl6 align-self-center>
+            <v-flex xl7 md7 align-self-center>
               <v-card class="card--transparent" flat width="80%">
                 <p>
                   {{ content }}
@@ -50,7 +51,7 @@
         <v-flex xl12 mx-auto pa-3 v-for="image in images" :key="image.name">
           <v-lazy
             :options="{
-              threshold: 0.1
+              threshold: 0.1,
             }"
             min-height="100"
             transition="fade-transition"
@@ -60,6 +61,7 @@
         </v-flex>
       </v-layout>
     </v-container>
+    </v-flex>
   </div>
 </template>
 
@@ -67,37 +69,37 @@
 export default {
   data() {
     return {
-      show: true
+      show: true,
     };
   },
-  mounted: function() {
+  mounted: function () {
     this.fadein();
   },
   methods: {
-    fadein: function() {
+    fadein: function () {
       this.show = false;
     },
     CheckifEmpty(client) {
       return Object.keys(this.client).length;
-    }
+    },
   },
 
   asyncData(context) {
     return context.app.$storyapi
       .get("cdn/stories/personalprojects/" + context.params.id, {
-        version: "published"
+        version: "published",
       })
-      .then(res => {
+      .then((res) => {
         return {
           images: res.data.story.content.image,
           title: res.data.story.content.title,
           client: res.data.story.content.client,
           role: res.data.story.content.role,
           year: res.data.story.content.year,
-          content: res.data.story.content.content.content[0].content[0].text
+          content: res.data.story.content.content.content[0].content[0].text,
         };
       });
-  }
+  },
 };
 </script>
 

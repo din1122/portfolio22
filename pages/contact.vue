@@ -1,5 +1,6 @@
 <template>
   <div>
+    <v-flex xl9 md10 sm11 ma-auto>
     <v-layout container wrap class="contact-container">
       <v-flex text-center>
         <v-card height="30vh" flat>
@@ -84,6 +85,7 @@
         </v-form>
       </v-flex>
     </v-layout>
+    </v-flex>
   </div>
 </template>
 

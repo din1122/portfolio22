@@ -11,6 +11,7 @@
           ></nuxt-link>
         
       </div>
+      <!--
       <div class="floating-circle-right">
         <a
           ><v-btn rounded class="rounded-btn"
@@ -18,6 +19,7 @@
           ></a
         >
       </div>
+      -->
     </v-container>
   </div>
 </template>
