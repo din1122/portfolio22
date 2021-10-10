@@ -32,6 +32,12 @@ export default {
             {
                 src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"
             },
+            {
+                src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"
+            },
+            {
+                src: "https://cdn.jsdelivr.net/npm/locomotive-scroll@4.0.4/dist/locomotive-scroll.min.js"
+            },
             {}
         ]
     },
@@ -49,7 +55,9 @@ export default {
     /*
      ** Plugins to load before mounting the App
      */
-    plugins: [],
+    plugins: [
+        '~/plugins/gsap.js'
+    ],
     /*
      ** Nuxt.js dev-modules
      */

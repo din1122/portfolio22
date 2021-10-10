@@ -9,7 +9,7 @@
       >
         <div
           class="fill-height backdrop
-            
+
 "
           :class="{ backdropactive: hover }"
         ></div>

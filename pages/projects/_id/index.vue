@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div >
     <v-flex xl9 md10 sm11 ma-auto>
     <v-container fluid   align-center style="height:100vh; align-content:center;display:flex;">
       <transition>
@@ -62,7 +62,7 @@
       <!-- end of xl9 -->
         </v-flex>
            <v-flex x12>
-      <v-img  max-height="700" src="/panoptic/0002.jpg" />
+      <!-- <v-img  max-height="700" src="/panoptic/0002.jpg" /> -->
     </v-flex>
         <v-flex xl9 md10 sm11 ma-auto>
      <!-- CHALLENGE -->
@@ -85,8 +85,7 @@
         </v-row>
         </v-flex>
 
-
-
+  <Ntms v-if="ntms" />
   <Panoptic v-if="panoptic" />
 
   </div>
@@ -95,6 +94,7 @@
 <script>
 import Panoptic from "~/components/panoptic.vue";
 import letswork from "~/components/letswork.vue";
+import Ntms from "~/components/ntms.vue";
 
 export default {
   data() {
@@ -102,12 +102,12 @@ export default {
       show: true,
       website: false,
       panoptic:false,
+      ntms:false,
     };
   },
   components: {
-    letswork,Panoptic
+    letswork,Panoptic,Ntms
   },
-  mounted:
 function () {
     this.fadein();
   },
@@ -115,6 +115,9 @@ function () {
     const urlPath =  this.$nuxt.$route.path
       if (urlPath == "/projects/panoptic"){
         this.panoptic = true
+      }
+      if(urlPath == '/projects/ntms'){
+        this.ntms = true
       }
   },
 
@@ -149,6 +152,7 @@ function () {
         }
       });
   },
+
 };
 </script>
 

@@ -4,8 +4,8 @@
     <div ref="circleFollow" class="circle-follow"></div>
 
     <Header v-on:open-drawer="drawer = !drawer" />
-    <v-layout wrap :class="[currentPage == '/' ? activeClass : '']">
-      <v-flex xl12 md10 sm11 ma-auto>
+    <v-layout wrap :class="[currentPage == '/' ? activeClass : '']" >
+      <v-flex xl12 md10 sm11 ma-auto  >
         <nuxt />
         <Footer />
       </v-flex>
@@ -27,133 +27,127 @@
 </template>
 
 <script>
-import Footer from "~/components/footer.vue";
-import FixedContact from "~/components/fixed-contact.vue";
-import Header from "~/components/header.vue";
-export default {
-  data() {
-    return {
-      links: [
-        { url: "/", title: "Home" },
-        { url: "/about", title: "About" },
-        { url: "/contact", title: "Contact" }
-      ],
-      activeClass: "bg-image",
-      drawer: false
-    };
-  },
-  computed: {
-    currentPage() {
-      return this.$route.path;
-    }
-  },
-  pageTransition: "default",
-  pageTransition: {
-    name: "page",
-    mode: "out-in",
-    beforeEnter(el) {
-      console.log("Before enter...");
-    }
-  },
-  //mounted() {
-  //  const { circle } = this.$refs;
-  //  const { circleFollow } = this.$refs;
-  //
-  //  function moveCircle(e) {
-  //    TweenLite.to(circle, 0.1, { x: e.clientX, y: e.clientY });
-  //    TweenLite.to(circleFollow, 0.4, { x: e.clientX, y: e.clientY });
-  //  }
-  //  function hoverFunc(e) {
-  //    TweenLite.to(circle, 0.1, { opacity: 1, scale: 0 });
-  //    TweenLite.to(circleFollow, 0.2, { scale: 2 });
-  //  }
-  //  function unhoverFunc(e) {
-  //    TweenLite.to(circle, 0.3, { opacity: 1, scale: 1 });
-  //    TweenLite.to(circleFollow, 0.3, { scale: 1 });
-  //  }
-  //  $("a, .link , .btn").hover(hoverFunc, unhoverFunc);
-  //  $(window).on("mousemove", moveCircle);
-  //},
-  components: {
-    Header,
-    FixedContact,
-    Footer
-  }
-};
+  import Footer from "~/components/footer.vue";
+  import FixedContact from "~/components/fixed-contact.vue";
+  import Header from "~/components/header.vue";
+  export default {
+    data() {
+      return {
+        links: [{
+            url: "/",
+            title: "Home"
+          },
+          {
+            url: "/about",
+            title: "About"
+          },
+          {
+            url: "/contact",
+            title: "Contact"
+          }
+        ],
+        activeClass: "bg-image",
+        drawer: false
+      };
+    },
+    computed: {
+      currentPage() {
+        return this.$route.path;
+      }
+    },
+    pageTransition: "default",
+    pageTransition: {
+      name: "page",
+      mode: "out-in",
+      beforeEnter(el) {
+        console.log("Before enter...");
+      }
+    },
+//     mounted() {
+// //     setTimeout(() => {
+// //         const scroll = new LocomotiveScroll({
+// //             el: document.querySelector('.smoothscroll'),
+// //             smooth: true, // false is ok circle...
+// //             // smartphone: {
+// //             //     smooth: true
+// //             // },
+// //             // tablet: {
+// //             //     smooth: true
+// //             // },
+// //             // getSpeed: true,
+// //             // getDirection: true,
+// //             // useKeyboard: true,
+// //             // reloadOnContextChange: true
+
+// //             //lerp: 0.1, // inertia da 0.1 a 1
+// //             //reloadOnContextChange: true
+// //         });
+// //
+// //  }, 100);
+//     },
+//
+
+
+
+
+              //mounted() {
+              //  const { circle } = this.$refs;
+              //  const { circleFollow } = this.$refs;
+              //
+              //  function moveCircle(e) {
+              //    TweenLite.to(circle, 0.1, { x: e.clientX, y: e.clientY });
+              //    TweenLite.to(circleFollow, 0.4, { x: e.clientX, y: e.clientY });
+              //  }
+              //  function hoverFunc(e) {
+              //    TweenLite.to(circle, 0.1, { opacity: 1, scale: 0 });
+              //    TweenLite.to(circleFollow, 0.2, { scale: 2 });
+              //  }
+              //  function unhoverFunc(e) {
+              //    TweenLite.to(circle, 0.3, { opacity: 1, scale: 1 });
+              //    TweenLite.to(circleFollow, 0.3, { scale: 1 });
+              //  }
+              //  $("a, .link , .btn").hover(hoverFunc, unhoverFunc);
+              //  $(window).on("mousemove", moveCircle);
+              //},,
+              components: {
+                Header,
+                FixedContact,
+                Footer
+              }
+          };
+
 </script>
 <style lang="scss" scoped>
-/*
-.circle {
-  position: fixed;
-  background-color: rgb(0, 0, 0);
-  width: 10px;
-  height: 10px;
-  left: -10px;
-  top: -10px;
-  border-radius: 100%;
-  z-index: 1;
-  pointer-events: none;
-  z-index: 10000;
-  transform: scale(1);
-  &.active {
-    opacity: 1;
-    transform: scale(0);
+  .page-enter-active {
+    animation: acrossIn 0.2s ease-out both;
   }
-}
-.circle-follow {
-  position: fixed;
-  border: 1px solid rgb(0, 0, 0);
-  width: 30px;
-  height: 30px;
-  left: -21px;
-  top: -21px;
-  border-radius: 100%;
-  z-index: 1;
-  user-select: none;
-  pointer-events: none;
-  z-index: 10000;
-  transform: scale(1);
-  &.active {
-    transform: scale(2.5);
-  }
-}
-*/
-/*
-.page-enter {
-  &::before {
-    height: 100vh;
-    background: green;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    bottom: 0;
-  }
-}
-*/
 
-.page-enter-active {
-  animation: acrossIn 0.2s ease-out both;
-}
-.page-leave-active {
-  animation: acrossOut 0.4s ease-in both;
-}
-@keyframes acrossIn {
-  0% {
-    transform: translate3d(-100%, 0, 0);
+  .page-leave-active {
+    animation: acrossOut 0.4s ease-in both;
   }
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-}
-@keyframes acrossOut {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(100%, 0, 0);
-  }
-}
 
-$transition-duration: 0.35s;
-$overlay-bg: #5e45cf;
+  @keyframes acrossIn {
+    0% {
+      transform: translate3d(-100%, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes acrossOut {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(100%, 0, 0);
+    }
+  }
+
+  $transition-duration: 0.35s;
+  $overlay-bg: #5e45cf;
+
+
 </style>

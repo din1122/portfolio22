@@ -1,5 +1,5 @@
 <template>
- <v-flex xl9 md10 sm11 ma-auto>
+ <v-col cols="9" class="ma-auto">
   <v-container fluid>
     <section class="home">
       <v-layout wrap fill-height>
@@ -110,7 +110,7 @@
 
     <!-- contact -->
   </v-container>
- </v-flex>
+ </v-col>
 </template>
 
 <script>
