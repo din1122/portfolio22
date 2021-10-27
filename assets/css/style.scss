@@ -1,5 +1,5 @@
 html {
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
 }
 
 .v-application a {
@@ -597,10 +597,4 @@ h1 {
 ::-webkit-scrollbar-thumb {
     background-color: #000000;
     border-radius: 10px;
-}
-
-.smoothscroll {
-    position: absolute;
-    top: 0;
-    left: 0;
 }

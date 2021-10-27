@@ -1,12 +1,7 @@
 <template>
   <div >
-    <v-flex xl9 md10 sm11 ma-auto>
+    <v-flex xl9 md10 sm11 xs10 ma-auto>
     <v-container fluid   align-center style="height:100vh; align-content:center;display:flex;">
-      <transition>
-        <div v-if="show" class="text-container">
-          <span>{{ title }} </span>
-        </div>
-      </transition>
       <v-layout wrap align-center >
         <v-flex xs12>
         <v-row>
@@ -39,7 +34,7 @@
                 </div>
             </div>
           </v-flex>
-          <v-flex xs4>
+          <v-flex xs12 sm4>
               <div style="padding:30px 0 30px 0">
               <span class="span-title">OVERVIEW</span>
               <div class="project-details">
@@ -61,13 +56,11 @@
     </v-container>
       <!-- end of xl9 -->
         </v-flex>
-           <v-flex x12>
-      <!-- <v-img  max-height="700" src="/panoptic/0002.jpg" /> -->
-    </v-flex>
+
         <v-flex xl9 md10 sm11 ma-auto>
      <!-- CHALLENGE -->
         <v-row class="row-pad">
-            <v-flex xs6 ma-auto>
+            <v-flex xs10 sm6 ma-auto>
               <h1 class="pb-5">The Challenge</h1>
               <p class="rich-text">
                   {{ challenge }}
@@ -76,7 +69,7 @@
         </v-row>
         <!-- THE SOULTION -->
         <v-row class="row-pad">
-            <v-flex xs6 ma-auto>
+            <v-flex xs10 sm6 ma-auto>
               <h1 class="pb-5">The Solution</h1>
              <p class="rich-text">
                   {{ solution }}
@@ -156,13 +149,11 @@ function () {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 .project-details{
   word-break: normal;
 }
-h3 {
-  font-size: 3rem;
-}
+
 .text-enter-active,
 .text-leave-active {
   transition: opacity 0.5s;
@@ -187,9 +178,131 @@ $t-delay: 300ms;
   line-height: 1.7;
 
 }
-.row-pad{
-  padding:100px 0 100px 0;
+
+
+  .row-pad {
+    padding: 100px 0 100px 0;
+  }
+
+  .row-pad-lg {
+    padding: 200px 0 200px 0;
+  }
+
+  .row-pad-xs {
+    padding: 30px 0 30px 0;
+  }
+
+  .row-pad-sections {
+    padding: 150px 0 150px 0;
+  }
+
+  .seperator {
+    background: #ECECEC;
+  }
+
+  .rich-text,
+  ul {
+    font-size: 1.3rem;
+    line-height: 1.7;
+  }
+
+
+  .tableofc-container {
+    height: 500px;
+    z-index: 4 !important;
+    padding:0 !important;
+  }
+
+ .tableofc {
+       position: relative;
+    z-index: 5;
+    width:700px;
+    margin:auto;
+    padding: 0;
+  }
+
+
+  .step-number {
+    margin: 0 auto 10px;
+    font-size: 1.5rem;
+    background: #fff;
+    border: 2px solid #d1d9dd;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1;
+    border-radius: 50%;
+    transition: all .3s;
+    position: relative;
+    z-index: 1;
+    float: none;
+    cursor: pointer;
+  }
+ .step-number-fixed{
+  transition:.2s all ease-in-out;
+   width: 32px;
+    height: 32px;
+       font-size: 1rem;
 }
+  .step-number:hover {
+    background: black;
+    color: white;
+  }
+
+  .nav-step-container {
+    width: 180px;
+    padding: 20px 10px;
+    position: relative;
+  }
+
+  .step-link {
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+
+  .nav-step {
+    position: relative;
+    text-align: center;
+    opacity: 1;
+    padding: 0;
+    background: transparent;
+    width: auto;
+    margin-bottom: 0;
+  }
+   .nav-steps-con .nav-step:not(:first-child):before {
+    content: "";
+    position: absolute;
+    top: 44px;
+    left: -26%;
+    width: 52%;
+    height: 2px;
+    background-color: #d1d9dd;
+    transition:.3s all ease-in-out;
+  }
+// panoptic
+
+  .book-text h3 {
+    text-decoration: underline;
+    transition: .3s all ease
+  }
+
+    .h3-link:hover {
+    text-decoration: underline;
+    color: #d1d9dd !important;
+    transition: .3s all ease
+  }
+
+.sticky-footer {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
 // p {
 //   font-size: 1.3rem;
 //   line-height: 2;

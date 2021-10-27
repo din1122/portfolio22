@@ -27,16 +27,16 @@ export default {
             href: "/favicon.ico"
         }],
         script: [{
-                src: "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+                src: "https://code.jquery.com/jquery-3.6.0.min.js"
             },
+            // {
+            //     src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+            // },
+            // {
+            //     src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"
+            // },
             {
-                src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"
-            },
-            {
-                src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"
-            },
-            {
-                src: "https://cdn.jsdelivr.net/npm/locomotive-scroll@4.0.4/dist/locomotive-scroll.min.js"
+                src: "https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"
             },
             {}
         ]
@@ -56,7 +56,7 @@ export default {
      ** Plugins to load before mounting the App
      */
     plugins: [
-        '~/plugins/gsap.js'
+        { src: '~/plugins/gsap.js', srr: true }
     ],
     /*
      ** Nuxt.js dev-modules
@@ -100,6 +100,9 @@ export default {
      */
     axios: {},
     build: {
+        transpile: [
+            "gsap"
+        ],
         vendor: ['axios'],
         analyze: false,
         extractCSS: true,

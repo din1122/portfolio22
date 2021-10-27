@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-flex xl9 md10 sm11 ma-auto>
+  <v-flex xl9 md10 sm11 ma-auto class="row-pad">
     <v-layout container wrap class="contact-container">
       <v-flex text-center>
         <v-card height="30vh" flat>
@@ -133,4 +133,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.row-pad{
+  padding:150px 0 150px;
+}
+</style>

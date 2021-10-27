@@ -30,27 +30,28 @@
       </v-flex>
       <v-flex lg9 xs11 ma-auto align-center style="height:95vh; display:grid;">
         <v-row class="justify-space-between">
-          <v-col lg="4" sm="12">
+           <v-col lg="4" sm="12">
             <v-card flat>
               <span class="span-title">
-                DESIGN SERVICES
+              DESIGN SERVICES
               </span>
               <p class="services-text">
-              Adobe XD / Photoshop / Illustrator / InDesign / After Effecs
+                UI Design / UX Research / Art Direction / Brand identity /
+                Iconography / Animation / Graphic design / 3D modeling
               </p>
             </v-card>
           </v-col>
           <v-col lg="4" sm="12">
             <v-card flat>
               <span class="span-title">
-                TOOLS I USE
+                  TOOLS I USE
               </span>
               <p class="services-text">
-                Art Direction / Web & Mobile / Brand identity / UI & UX /
-                Iconography / Animation / Graphic design
+             Figma / Blender / Miro / Adobe XD / Photoshop / Illustrator / InDesign / After Effecs / Figma / Blender / Miro
               </p>
             </v-card>
           </v-col>
+
         </v-row>
         <v-row justify="space-between">
           <v-col lg="4" sm="12">

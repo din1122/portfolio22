@@ -16,13 +16,10 @@
                 Feel free to reach out to me any time. I prefer to talk over
                 email, especially since we may be a few time zones away.
               </p>
-              <span>E:</span
-              ><span class="footer-span-contact">DinAshkenazi@gmail.com</span
-              ><br />
-              <span>P:</span
-              ><span class="footer-span-contact">+972 542221666</span>
-              <div>
-                <img height="65px" src="/logo.png" />
+              <div class="pb-3"><span>E: </span><span class="footer-span-contact pb-4">DinAshkenazi@gmail.com</span></div>
+              <span>P: </span><span class="footer-span-contact">+972 542221666</span>
+              <div class="pt-5">
+                <img height="45px" class="ma-auto" src="/logo-svg.svg" />
               </div>
             </v-card-text>
           </v-card>
@@ -91,8 +88,8 @@ export default {
   data() {
     return {
       socials: [
-        { title: "dirbble", src: "#" },
-        { title: "instagram", src: "https://www.instagram.com/dinashkenazi/" },
+        { title: "Dirbble", src: "https://dribbble.com/DinAshkenazi" },
+        { title: "Instagram", src: "https://www.instagram.com/dinashkenazi/" },
         { title: "Behance", src: "#" },
       ],
       projects: [

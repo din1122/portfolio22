@@ -42,8 +42,7 @@
             transition="fade-transition"
           >
             <v-img
-              class="profile-img"
-              :position="{}"
+              class="profile-img" contain
               src="/photos/profile-pic.png"
             ></v-img>
           </v-lazy>
@@ -53,7 +52,7 @@
     <!-- case studies
      :position="{'20vh center': $vuetify.breakpoint.mdAndDown,'center center ': $vuetify.breakpoint.lgAndUp }"
     -->
-    <section pt-5>
+    <section pt-5 class="row-pad">
       <v-layout wrap>
         <v-flex xl12 xs12>
           <v-card height="300px" class="trans-card" flat align-center>
@@ -80,7 +79,7 @@
       </v-layout>
     </section>
     <!-- Personal Projects -->
-    <section>
+    <!-- <section>
       <v-layout wrap>
         <v-flex xl12 xs12>
           <v-card d-flex height="200px" flat align-center>
@@ -106,7 +105,7 @@
         </v-flex>
       </v-layout>
       <letswork />
-    </section>
+    </section> -->
 
     <!-- contact -->
   </v-container>
@@ -115,9 +114,11 @@
 
 <script>
 import letswork from "~/components/letswork.vue";
-import PersonalProjects from "~/components/PersonalProjects.vue";
+// import PersonalProjects from "~/components/PersonalProjects.vue";
 import CaseStudies from "~/components/CaseStudies.vue";
+
 export default {
+ scrollToTop: true,
   data() {
     return {
       hover: false,
@@ -127,8 +128,10 @@ export default {
   components: {
     letswork,
     CaseStudies,
-    PersonalProjects,
+    // PersonalProjects,
   },
+
+
   async asyncData(context) {
     const projects = await context.app.$storyapi
       .get("cdn/stories", {
@@ -170,4 +173,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.row-pad{
+  padding:50px 0 200px 0;
+}
+</style>

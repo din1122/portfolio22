@@ -1,8 +1,8 @@
 <template>
-  <v-app-bar dense flat fixed class="app-bar" height="67px">
+  <v-app-bar dense flat fixed class="app-bar" height="75px">
     <nuxt-link to="/">
-      <v-toolbar-title> 
-        <img height="75px" src="/logo.png" />
+      <v-toolbar-title>
+        <img class="logo" src="/logo-svg.svg" />
        </v-toolbar-title
     ></nuxt-link>
     <v-spacer></v-spacer>
@@ -22,6 +22,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.logo{
+    padding:5px 0 0 60px;
+    width: 70%;
+    height:100%;
+}
 .v-toolbar__title {
   margin-left: -10%;
 }
