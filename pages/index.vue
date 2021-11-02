@@ -1,5 +1,5 @@
 <template>
- <v-col cols="9" class="ma-auto">
+ <v-col lg="9" class="ma-auto">
   <v-container fluid>
     <section class="home">
       <v-layout wrap fill-height>
@@ -7,15 +7,14 @@
           <v-card flat class="home-text-card" style="background: transparent;">
             <div class="d-block">
               <span class="span-title">DIN ASHKENAZI</span>
-              <h1>Website</h1>
               <h1>UI UX Desginer</h1>
-              <p class="subheading">
+              <p class="subheading" style="line-height:1.8">
                 Over the past 6 years, as a desginer and front-end developer,
                 I've worked with clients and entrepreneurs to successfully help
                 them reach their full potential.
               </p>
               <span>
-                <span class="link bolded-span pa-2">
+                <span class="link bolded-span pr-2 pb-2">
                        <nuxt-link to="/about">
                     About me
                   </nuxt-link>
@@ -42,9 +41,9 @@
             transition="fade-transition"
           >
             <v-img
-              class="profile-img" contain
+              class="profile-img"
               src="/photos/profile-pic.png"
-            ></v-img>
+            />
           </v-lazy>
         </v-flex>
       </v-layout>
@@ -56,7 +55,7 @@
       <v-layout wrap>
         <v-flex xl12 xs12>
           <v-card height="300px" class="trans-card" flat align-center>
-            <v-card-title class="fill-height">
+            <v-card-title class="fill-height pa-0 ">
               <div class="letswork-container">
                 <span class="span-title">SELECTED PROJECTS</span>
                 <h1>Case studies</h1>

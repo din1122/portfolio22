@@ -25,21 +25,21 @@
       <v-flex xl8 offset-xl1 xs12>
         <v-form id="submit-contact" @submit.prevent="sendEmail">
           <v-row justify="space-around">
-            <v-col cols="10" xs="12">
+            <v-col cols="10" lg="10" >
               <p>
                 Got a Project ? Drop me a line if you want to work with me on
                 something exciting. Big or small. Mobile or web.
               </p>
             </v-col>
 
-            <v-col cols="4">
+            <v-col cols="10" lg="4" class="d-flex flex-column">
               <span>Your Name</span>
-              <v-text-field
+              <v-text-field class="pb-5"
                 name="name"
                 v-model="name"
                 label="What is Your Name?"
               ></v-text-field>
-              <span>Service</span>
+              <span class="pb-3">Service</span>
               <v-select
                 name="service"
                 v-model="service"
@@ -48,15 +48,17 @@
                 solo
               ></v-select>
             </v-col>
-            <v-col cols="4">
+            <v-col cols="10" lg="4" class="d-flex flex-column">
               <span>Your Email</span>
               <v-text-field
+              class="pb-5"
                 name="email"
                 v-model="email"
                 label="What is Your Email Address?"
                 type="email"
               ></v-text-field>
-              <span>Budget</span>
+              <span class="pb-3">Budget</span>
+
               <v-select
                 name="budget"
                 v-model="budget"
@@ -65,8 +67,9 @@
                 solo
               >
               </v-select>
+
             </v-col>
-            <v-col cols="10">
+            <v-col cols="10" lg="10">
               <span>Message</span>
               <v-text-field
                 name="message"
@@ -75,7 +78,7 @@
               >
               </v-text-field>
             </v-col>
-            <v-col cols="10">
+            <v-col cols="10" lg="10">
               <v-btn type="submit" form="submit-contact">
                 <v-icon left>mdi-email</v-icon>
                 Send Message</v-btn

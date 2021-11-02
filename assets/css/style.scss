@@ -2,6 +2,10 @@ html {
     // scroll-behavior: smooth;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .v-application a {
     text-decoration: none;
 }
@@ -46,7 +50,7 @@ a {
 }
 
 .home {
-    height: 100vh;
+    padding: 0;
 }
 
 .app-bar,
@@ -63,6 +67,12 @@ a {
     font-family: Helvetica-Regular;
     font-size: 0.9rem;
     letter-spacing: 8px;
+}
+
+.case-study-container {
+    height: 50vh;
+    align-content: center;
+    display: flex;
 }
 
 h3 {
@@ -177,11 +187,10 @@ transform: scale(1);
     height: 100%;
 }
 
-.app-bar {
-    padding: 9px !important;
-    background: transparent;
-}
-
+// .app-bar {
+//     padding: 9px !important;
+//     background: transparent;
+// }
 
 /* hover effect */
 
@@ -384,17 +393,29 @@ transform: scale(1);
     font-size: 2.2rem;
 }
 
+.profile-img .v-image__image--cover {
+    background-size: 90%;
+    background-position: 90% -90% !important;
+}
+
 @media only screen and (max-device-width: 660px) {
+    .logo {
+        padding: 0;
+    }
+    .profile-img .v-image__image--cover {
+        background-size: 100%;
+        background-position: cover !important;
+    }
     .overlay-content {
         font-size: 2.3rem;
     }
     .project-title {
         font-size: 1.6rem;
     }
-    .app-bar {
-        padding: 9px !important;
-        background: #ffffffc7 !important;
-    }
+    // .app-bar {
+    //     padding: 9px !important;
+    //     background: #ffffffc7 !important;
+    // }
     .container {
         margin-top: 15%;
     }
@@ -407,7 +428,7 @@ transform: scale(1);
     }
     .lets-work-text {
         word-break: break-word;
-        font-size: 2rem;
+        font-size: 1rem;
     }
     .footer-title {
         font-size: 2rem !important;
@@ -442,6 +463,14 @@ transform: scale(1);
 
 // ipad
 @media only screen and (max-device-width: 768px) {
+    .case-study-container {
+        height: 100%;
+        align-content: center;
+        display: flex;
+    }
+    .home {
+        padding: 75vw 0 100px 0;
+    }
     h1 {
         font-size: 4.8rem;
     }
@@ -578,7 +607,7 @@ h1 {
 }
 
 .home-text-card {
-    height: 55vh;
+    height: 50%;
 }
 
 

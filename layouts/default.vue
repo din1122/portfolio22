@@ -1,11 +1,11 @@
 <template>
-  <v-app light class="pa-5 smoothscroll" >
+  <v-app light class="pa-5" >
     <!-- <div ref="circle" class="circle"></div>
     <div ref="circleFollow" class="circle-follow"></div> -->
 
     <Header v-on:open-drawer="drawer = !drawer" />
     <v-layout wrap :class="[currentPage == '/' ? activeClass : '']" >
-      <v-flex xl12 md12 sm11 ma-auto  >
+      <v-flex xl12 md12  ma-auto  >
         <nuxt />
         <Footer />
       </v-flex>

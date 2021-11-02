@@ -7,7 +7,7 @@
       </v-col>
       <v-col cols="11" class="ma-auto">
         <v-row class="row-pad-lg">
-          <v-flex xs4 class="pe-5">
+          <v-flex xs12 lg4 class="pe-5">
             <h2 class="pb-5">Webapp Sitemap</h2>
             <p class="rich-text">
               At the start of the project, I decided to create a sitemap so I could better understand the user paths and
@@ -18,14 +18,14 @@
             </p>
             <br><br>
           </v-flex>
-          <v-flex xs7 offset-xs1 d-flex justify-center>
-            <img style="width:100%; max-width:100%;" src="/ntms/sitemap.jpg" alt=""  >
+          <v-flex lg7 offset-lg1 xs12 d-flex justify-center>
+            <v-img style="width:100%; max-width:100%;" src="/ntms/sitemap.jpg" alt=""  />
           </v-flex>
         </v-row>
       </v-col>
-      <v-flex xl9 md10 sm11 ma-auto>
+      <v-flex xl9 md10 sm11  ma-auto>
         <v-row class="row-pad">
-          <v-flex xs6 ma-auto>
+          <v-flex xs10 lg6 ma-auto>
             <h2 class="pb-5">Webapp Userflow</h2>
             <p class="rich-text">
               I started by mapping out the user's steps to see how I cloud to simplify their journey on the platform.
@@ -39,7 +39,7 @@
         </v-row>
       </v-flex>
       <v-col col="12" class="seperator row-pad">
-        <v-flex class="ma-auto" xs9 d-flex flex-column justify-center>
+        <v-flex class="ma-auto" xs10 lg9 d-flex flex-column justify-center>
           <img style="width:100%; max-width:100%;"  src="/ntms/userflow.jpg" alt="" class="rounded elevation-3" max-width="100%" >
 
           <span class="pt-5 ma-auto">WEBAPP USERFLOW</span>
@@ -47,7 +47,7 @@
       </v-col>
       <v-col cols="11" class="ma-auto">
         <v-row class="row-pad-lg">
-          <v-flex xs4 class="pe-5">
+          <v-flex lg4 xs12 class="pe-5">
             <h2 class="pb-5">Mobile App Sitemap</h2>
             <p class="rich-text">
               I created this sitemap to understand the app structure, hierarchy, and usability. <br>
@@ -56,14 +56,14 @@
             </p>
             <br><br>
           </v-flex>
-          <v-flex xs7 offset-xs1 d-flex justify-center>
+          <v-flex lg7 offset-lg1 xs12 d-flex justify-center>
             <img style="width:100%; max-width:100%;"  src="/ntms/app-sitemap.jpg" alt=""  >
           </v-flex>
         </v-row>
       </v-col>
       <v-flex xl9 md10 sm11 ma-auto>
         <v-row class="row-pad">
-          <v-flex xs6 ma-auto>
+          <v-flex lg6 xs10 ma-auto>
             <h2 class="pb-5">Mobile App Userflow</h2>
             <p class="rich-text">
               I started out with the main userflow in the app. Question filling.
@@ -90,7 +90,7 @@
 
       <v-col cols="11" class="ma-auto">
         <v-row class="row-pad-lg">
-          <v-flex xs4 class="pe-5 ">
+          <v-flex lg4 xs12 class="pe-5 ">
             <div class="persona-fixed d-flex align-top justify-center flex-column">
               <h2>Personas</h2><br>
               <p class="rich-text">
@@ -100,23 +100,109 @@
                 I knew one persona will use the desktop web app and one will use the mobile application.
                 <br> <br>
               </p>
-              <ul>
+              <ul class="pb-4 lg-pb-0">
                 <li>Cleaning/Any workforce manager</li>
                 <li>Worker</li>
               </ul>
             </div>
           </v-flex>
-          <v-flex xs7 offset-xs1 d-flex justify-center>
+          <v-flex lg7 offset-lg1 xs12 d-flex justify-center>
             <img style="width:100%; max-width:100%;"  src="/ntms/Persona.jpg" class="elevation-1">
           </v-flex>
           <v-flex xs4 class="pe-5">
           </v-flex>
-          <v-flex xs7 offset-xs1 d-flex justify-center class="pt-5">
+          <v-flex lg7 offset-lg1 xs12 d-flex justify-center class="pt-5">
             <img style="width:100%; max-width:100%;"  src="/ntms/Persona2.jpg" class="elevation-1" >
           </v-flex>
         </v-row>
       </v-col>
-      <v-col cols="5" class="ma-auto">
+      <v-col cols="12" class="align-center row-pad-sections seperator" id="branding">
+        <h1 class="text-center">Branding</h1>
+      </v-col>
+      <v-col class="d-flex justify-center align-center" style="background:#2121CC; height:100vh;">
+        <img style="width:400px; max-width:350px; height:350px;" src="/ntms/logo.svg" contain max-height="350" max-width="350" >
+      </v-col>
+      <v-flex ma-auto xs10 md6 class="row-pad-lg">
+        <h2 class="pb-5">Colors</h2>
+        <v-row >
+          <v-col cols="6" lg="2">
+            <div class="w-100 d-flex flex-column align-center justify-center">
+              <span class="pb-3">Primary</span>
+              <v-tooltip bottom>
+                <template v-slot:activator="{ on, attrs }">
+                  <div v-bind="attrs" v-on="on"
+                    style="border-radius:15px; background-color:#2121CC; width:105px; height:100px"></div>
+                </template>
+                <span>#2121CC</span>
+              </v-tooltip>
+            </div>
+          </v-col>
+          <v-col cols="6" lg="2">
+            <div class="w-100 d-flex flex-column align-center justify-center">
+              <span class="pb-3">Secondary</span>
+
+              <v-tooltip bottom>
+                <template v-slot:activator="{ on, attrs }">
+                  <div v-bind="attrs" v-on="on"
+                    style="border-radius:15px; background-color:#5FFCFF; width:105px; height:100px"></div>
+                </template>
+                <span>#5FFCFF</span>
+              </v-tooltip>
+            </div>
+          </v-col>
+          <v-col cols="6" lg="2">
+            <div class="w-100 d-flex flex-column align-center justify-center">
+              <span class="pb-3">Text & Inputs</span>
+
+              <v-tooltip bottom>
+                <template v-slot:activator="{ on, attrs }">
+                  <div v-bind="attrs" v-on="on"
+                    style="border-radius:15px; background-color:#B6B6B6; width:105px; height:100px"></div>
+                </template>
+                <span>#B6B6B6</span>
+              </v-tooltip>
+            </div>
+          </v-col>
+
+          <v-col cols="6" lg="2">
+            <div class="w-100 d-flex flex-column align-center justify-center">
+              <span class="pb-3">Success</span>
+              <v-tooltip bottom>
+                <template v-slot:activator="{ on, attrs }">
+                  <div v-bind="attrs" v-on="on"
+                    style="border-radius:15px; background-color:#60BF60; width:105px; height:100px"></div>
+                </template>
+                <span>#60BF60</span>
+              </v-tooltip>
+            </div>
+          </v-col>
+          <v-col cols="6" lg="2">
+            <div class="w-100 d-flex flex-column align-center justify-center">
+              <span class="pb-3">Error</span>
+              <v-tooltip bottom>
+                <template v-slot:activator="{ on, attrs }">
+                  <div v-bind="attrs" v-on="on"
+                    style="border-radius:15px; background-color:#D65858; width:105px; height:100px"></div>
+                </template>
+                <span>#D65858</span>
+              </v-tooltip>
+            </div>
+          </v-col>
+          <v-col cols="6" lg="2">
+            <div class="w-100 d-flex flex-column align-center justify-center">
+              <span class="pb-3">Warning</span>
+              <v-tooltip bottom>
+                <template v-slot:activator="{ on, attrs }">
+                  <div v-bind="attrs" v-on="on"
+                    style="border-radius:15px; background-color:#ECC340; width:105px; height:100px"></div>
+                </template>
+                <span>#ECC340</span>
+              </v-tooltip>
+            </div>
+          </v-col>
+        </v-row>
+      </v-flex>
+      <v-col cols="11" lg="4" class="ma-auto">
         <h2>Wireframes</h2><br>
         <p class="rich-text">
           At the start of my design process, I created Low-fi wireframes to test different layout styles of the app.
@@ -126,13 +212,13 @@
         </p>
       </v-col>
       <v-flex xs12 d-flex justify-center class="row-pad-lg">
-        <img style="width:100%; max-width:100%;"  src="/ntms/Wireframes.jpg">
+        <v-img style="width:100%; max-width:100%;"  src="/ntms/Wireframes.jpg" />
       </v-flex>
 
       <v-col cols="12" class="align-center row-pad-sections seperator" id="design">
         <h1 class="text-center">Design</h1>
       </v-col>
-      <v-col cols="5" class="ma-auto row-pad-lg">
+      <v-col cols="10" lg="5" class="ma-auto row-pad-lg">
         <h2>UI Design</h2><br>
         <p class="rich-text">
           Once my wireframes were explained and tested by the client, I began designing the final screen in high-fidelity
@@ -143,9 +229,9 @@
       </v-col>
 
 
-      <v-col cols="9" class="ma-auto row-pad-lg">
+      <v-col cols="10" lg="9" class="ma-auto row-pad-lg">
         <v-row class="row-pad-lg d-flex ">
-          <v-col cols="4" class="pad-top">
+          <v-col cols="12" lg="4" class="pad-top">
             <h2>Dashboard Screen</h2><br>
             <p class="rich-text">
               This is the main screen. The first screen the user will see when he logged in to the app.
@@ -163,28 +249,29 @@
               then can access the report of the task.<br>
             </p>
           </v-col>
-          <v-col cols="8">
-            <img style="width:100%; max-width:100%;" max-width="90%" src="/ntms/dashboard.png" class="elevation-1 ml-auto" >
+          <v-col lg="8" col="12">
+            <v-img max-width="90%" src="/ntms/dashboard.png" class="elevation-1 ml-auto" />
           </v-col>
         </v-row>
         <v-row class="row-pad-lg ">
-          <v-col cols="4">
+          <v-col cols="12" lg="4">
             <h2>Dashboard screen B</h2><br>
             <p class="rich-text">
               This is the same dashboard but with the second graph which the user can switch.
               With this graph, the user can view only the answered questions and not answered questions.
             </p>
           </v-col>
-          <v-col cols="8">
+          <v-col cols="12" lg="4">
             <img style="width:100%; max-width:100%;" max-width="90%" src="/ntms/dashboard-b.png" class="elevation-1  ml-auto" >
           </v-col>
         </v-row>
         <v-row class="row-pad-lg d-flex ">
-          <v-col cols="4">
+          <v-col cols="12" lg="4">
             <h2>Reports page</h2><br>
             <p class="rich-text">
               On this page, the user can search reports. He can review their job edit, export to an CVS file, and
-              delete them.
+              delete them.<br><br>
+              I've designed the search filters as a drawer so the user can drag move the search so he can focus on the results.
               <br><br>
               Features on this page:
             </p>
@@ -198,14 +285,14 @@
             </ul>
 
           </v-col>
-          <v-col cols="8">
+          <v-col cols="12" lg="8">
             <img style="width:100%; max-width:100%;" max-width="90%" src="/ntms/report.png" class="elevation-1 ml-auto" >
           </v-col>
         </v-row>
 
 
       </v-col>
-      <v-col cols="9" class="ma-auto row-pad-lg">
+      <v-col cols="12" lg="9" class="ma-auto row-pad-lg">
 
         <v-col cols="10" class="ma-auto">
           <img style="width:100%; max-width:100%;" max-width="100%" src="/ntms/products.png" class="elevation-1 " >
@@ -226,12 +313,19 @@
           <img style="width:100%; max-width:100%;" max-width="100%" src="/ntms/report-b.png" class="elevation-1" >
         </v-col>
       </v-col>
+          <v-col class="text-center">
+        <v-row class="row-pad text-center align-center justify-center">
+          <a class="h3-link" href="https://xd.adobe.com/view/d35bcd3f-2199-4416-bcce-b3c9359cbac0-8608/">
+            <h3>Click here for full Prototype</h3>
+          </a>
+        </v-row>
+      </v-col>
       <v-col cols="12" class="pa-0 row-pad">
         <img style="width:100%; max-width:100%;" src="/ntms/mobile-ui-screens.jpg" contain width="100%" max-width="100%"  />
       </v-col>
-      <v-col cols="9" class="row-pad-lg ma-auto">
+      <v-col cols="10" lg="9" class="row-pad-lg ma-auto">
         <v-row class="row-pad-lg">
-          <v-col cols="6">
+          <v-col cols="12" lg="6">
             <h2>Fill question screen</h2><br>
             <p class="rich-text">
               In this screen, I designed all the components types the manager can add to his question group to track his job.<br> <br>
@@ -250,13 +344,13 @@
               <li>Date picker</li>
             </ul>
           </v-col>
-          <v-col cols="6">
+          <v-col cols="12" lg="6">
             <img style="width:400px; max-width:100%; display:block;"  src="/ntms/fill.png" class="elevation-1 ma-auto"  >
           </v-col>
         </v-row>
 
         <v-row class="row-pad-lg">
-          <v-col cols="6">
+          <v-col cols="12" lg="6">
             <h2>App main screen</h2><br>
             <p class="rich-text">
               This is the first screen the user will see when logged in.<br>
@@ -268,117 +362,30 @@
               <strong>The user will not be able to answer the questions without scanning the QR code.</strong>
             </p>
           </v-col>
-          <v-col cols="6">
+          <v-col cols="12" lg="6">
             <img style="width:400px; max-width:100%; display:block;" max-width="100%" width="400px" src="/ntms/item-group.png" class="elevation-1 ma-auto" >
           </v-col>
         </v-row>
 
         <v-row class="row-pad-lg">
-          <v-col cols="4">
+          <v-col cols="12" lg="4">
             <h2>App question fill flow</h2><br>
             <p class="rich-text">
               This is a prototype flow of a new user going through fill out a table question - whether is it cleaned or
               not.
             </p>
           </v-col>
-          <v-col cols="6" offset="2" >
-            <video autoplay loop width="400px" src="/ntms/prototype_1.mp4" class="ma-auto d-flex">
+          <v-col  cols="12" lg="4" offset-lg="4" >
+            <video autoplay loop width="100%" src="/ntms/prototype_1.mp4" class="ma-auto d-flex">
               <source src="/ntms/prototype_1.mp4" type="video/mp4">
             </video>
           </v-col>
         </v-row>
       </v-col>
-      <v-col cols="12" class="align-center row-pad-sections seperator" id="branding">
-        <h1 class="text-center">Branding</h1>
-      </v-col>
-      <v-col class="d-flex justify-center align-center" style="background:#2121CC; height:100vh;">
-        <img style="width:400px; max-width:350px; height:350px;" src="/ntms/logo.svg" contain max-height="350" max-width="350" >
-      </v-col>
-      <v-flex ma-auto xs6 class="row-pad-lg">
-        <h2 class="pb-5">Colors</h2>
-        <v-row>
-          <v-col cols="2">
-            <div class="w-100 d-flex flex-column align-center justify-center">
-              <span class="pb-3">Primary</span>
-              <v-tooltip bottom>
-                <template v-slot:activator="{ on, attrs }">
-                  <div v-bind="attrs" v-on="on"
-                    style="border-radius:15px; background-color:#2121CC; width:105px; height:100px"></div>
-                </template>
-                <span>#2121CC</span>
-              </v-tooltip>
-            </div>
-          </v-col>
-          <v-col cols="2">
-            <div class="w-100 d-flex flex-column align-center justify-center">
-              <span class="pb-3">Secondary</span>
 
-              <v-tooltip bottom>
-                <template v-slot:activator="{ on, attrs }">
-                  <div v-bind="attrs" v-on="on"
-                    style="border-radius:15px; background-color:#5FFCFF; width:105px; height:100px"></div>
-                </template>
-                <span>#5FFCFF</span>
-              </v-tooltip>
-            </div>
-          </v-col>
-          <v-col cols="2">
-            <div class="w-100 d-flex flex-column align-center justify-center">
-              <span class="pb-3">Text & Inputs</span>
-
-              <v-tooltip bottom>
-                <template v-slot:activator="{ on, attrs }">
-                  <div v-bind="attrs" v-on="on"
-                    style="border-radius:15px; background-color:#B6B6B6; width:105px; height:100px"></div>
-                </template>
-                <span>#B6B6B6</span>
-              </v-tooltip>
-            </div>
-          </v-col>
-
-          <v-col cols="2">
-            <div class="w-100 d-flex flex-column align-center justify-center">
-              <span class="pb-3">Success</span>
-              <v-tooltip bottom>
-                <template v-slot:activator="{ on, attrs }">
-                  <div v-bind="attrs" v-on="on"
-                    style="border-radius:15px; background-color:#60BF60; width:105px; height:100px"></div>
-                </template>
-                <span>#60BF60</span>
-              </v-tooltip>
-            </div>
-          </v-col>
-          <v-col cols="2">
-            <div class="w-100 d-flex flex-column align-center justify-center">
-              <span class="pb-3">Error</span>
-              <v-tooltip bottom>
-                <template v-slot:activator="{ on, attrs }">
-                  <div v-bind="attrs" v-on="on"
-                    style="border-radius:15px; background-color:#D65858; width:105px; height:100px"></div>
-                </template>
-                <span>#D65858</span>
-              </v-tooltip>
-            </div>
-          </v-col>
-          <v-col cols="2">
-            <div class="w-100 d-flex flex-column align-center justify-center">
-              <span class="pb-3">Warning</span>
-              <v-tooltip bottom>
-                <template v-slot:activator="{ on, attrs }">
-                  <div v-bind="attrs" v-on="on"
-                    style="border-radius:15px; background-color:#ECC340; width:105px; height:100px"></div>
-                </template>
-                <span>#ECC340</span>
-              </v-tooltip>
-            </div>
-          </v-col>
-        </v-row>
-
-
-      </v-flex>
-    <v-flex xl9 md10 sm11 ma-auto>
+    <v-flex xl9 md10 sm11 xs10 ma-auto>
       <v-row class="row-pad">
-        <v-flex ma-auto xs6>
+        <v-flex ma-auto lg7 xs12>
           <h2 class="pb-3">My Takeaways</h2>
           <p class="rich-text">
            In this project, I learned how to manage with a limited budget along with providing the best user experience in the mobile app and desktop web app. <br> <br>
@@ -416,96 +423,9 @@ to conclude, the project was fun to design. I enjoyed designing and defining it,
 h3 {
   font-size: 3rem;
 }
-//
-//
-//   .row-pad {
-//     padding: 100px 0 100px 0;
-//   }
-//
-//   .row-pad-lg {
-//     padding: 200px 0 200px 0;
-//   }
-//
-//   .row-pad-xs {
-//     padding: 30px 0 30px 0;
-//   }
-//
-//   .row-pad-sections {
-//     padding: 150px 0 150px 0;
-//   }
-//
-//   .seperator {
-//     background: #ECECEC;
-//   }
-//
-//   .rich-text,
-//   ul {
-//     font-size: 1.3rem;
-//     line-height: 1.7;
-//   }
-//
-//
-//   .tableofc-container {
-//     height: 500px;
-//     z-index: 999 !important
-//   }
-//
-//  .tableofc {
-//     padding: 0;
-//   }
-//
-//
-//   .step-number {
-//     margin: 0 auto 10px;
-//     font-size: 1.5rem;
-//     background: #fff;
-//     border: 2px solid #d1d9dd;
-//     width: 48px;
-//     height: 48px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     text-align: center;
-//     line-height: 1;
-//     border-radius: 50%;
-//     transition: all .3s;
-//     position: relative;
-//     z-index: 1;
-//     float: none;
-//     cursor: pointer;
-//   }
-//  .step-number-fixed{
-//   transition:.2s all ease-in-out;
-//    width: 32px;
-//     height: 32px;
-//        font-size: 1rem;
-// }
-//   .step-number:hover {
-//     background: black;
-//     color: white;
-//   }
-//
-//   .nav-step-container {
-//     width: 180px;
-//     padding: 20px 10px;
-//     position: relative;
-//   }
-//
-//   .step-link {
-//     flex-direction: column;
-//     display: flex;
-//     text-align: center;
-//     align-items: center;
-//   }
-//
-//   .nav-step {
-//     position: relative;
-//     text-align: center;
-//     opacity: 1;
-//     padding: 0;
-//     background: transparent;
-//     width: auto;
-//     margin-bottom: 0;
-//   }
-
+@media only screen and (max-width: 600px) {
+  h3{
+    font-size:2.5rem;
+  }
+}
 </style>

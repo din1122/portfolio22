@@ -26,11 +26,11 @@
         </div>
       </v-flex>
       <v-flex xs12 pt-5>
-        <v-img src="https://picsum.photos/1500/" max-height="800"></v-img>
+        <v-img src="https://picsum.photos/1500/" max-height="400"></v-img>
       </v-flex>
-      <v-flex lg9 xs11 ma-auto align-center style="height:95vh; display:grid;">
-        <v-row class="justify-space-between">
-           <v-col lg="4" sm="12">
+      <v-flex lg7  xs12 ma-auto align-center style="height:95vh; display:grid;">
+        <v-row class="justify-space-between flex-wrap d-flex flex-column flex-md-row">
+           <v-col lg="4" sm="12" col="12">
             <v-card flat>
               <span class="span-title">
               DESIGN SERVICES
@@ -41,7 +41,7 @@
               </p>
             </v-card>
           </v-col>
-          <v-col lg="4" sm="12">
+          <v-col lg="4" sm="12" col="12">
             <v-card flat>
               <span class="span-title">
                   TOOLS I USE
@@ -53,7 +53,7 @@
           </v-col>
 
         </v-row>
-        <v-row justify="space-between">
+        <v-row justify="space-between" class="flex-column flex-md-row">
           <v-col lg="4" sm="12">
             <v-card flat>
               <span class="span-title">
@@ -79,7 +79,7 @@
         </v-row>
       </v-flex>
       <v-flex>
-        <v-row align="left" justify="center">
+        <v-row align="left" justify="center" class="row-pad">
           <v-card class="text-center justify-center mb-5 experience-box" flat>
             <v-card-title class="fill-height">
               <div class="text-left letswork-container">
@@ -132,5 +132,8 @@ p {
 h2 {
   font-size: 3.6rem;
   word-break: break-word;
+}
+.row-pad{
+  padding:150px 0 150px 0;
 }
 </style>

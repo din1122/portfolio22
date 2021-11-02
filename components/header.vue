@@ -1,7 +1,8 @@
 <template>
-  <v-app-bar dense flat fixed class="app-bar" height="75px">
+  <v-app-bar dense flat fixed class="app-bar" height="75">
     <nuxt-link to="/">
-      <v-toolbar-title>
+      <v-toolbar-title class="d-flex">
+            <!-- <img height="45px" class="ma-auto" src="/logo-svg.svg" /> -->
         <img class="logo" src="/logo-svg.svg" />
        </v-toolbar-title
     ></nuxt-link>
@@ -22,12 +23,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.app-bar{
+  background:rgb(248, 248, 248) !important
+}
 .logo{
-    padding:5px 0 0 60px;
-    width: 70%;
+    width:75%;
+    margin: auto;
     height:100%;
 }
-.v-toolbar__title {
-  margin-left: -10%;
+@media only screen and (max-device-width: 660px) {
+    .logo {
+          margin:0;
+    }
 }
+// .v-toolbar__title {
+//   margin-left: -10%;
+// }
 </style>
