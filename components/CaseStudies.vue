@@ -1,6 +1,7 @@
 <template>
   <nuxt-link :to="'/projects/' + id" style="display: contents;">
-    <v-flex xs12 md6 sm6 class="project-container projectcontaineractive pa-0 pb-5 pb-md-0 pa-lg-5" >
+    <!-- <v-flex xs12 md6 sm6 class="project-container projectcontaineractive pa-0 pb-5 pb-md-0" > -->
+    <v-flex xs12 md6 sm6 class="project-container projectcontaineractive " >
       <v-card
         @mouseenter.native="mouseenter()"
         @mouseleave.native="mouseout()"
@@ -70,6 +71,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .fade-enter-to {
   transition: all 0.21s ease-in-out;
   transition-delay: 0.15s;

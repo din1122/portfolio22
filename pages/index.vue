@@ -59,12 +59,13 @@
               <div class="letswork-container">
                 <span class="span-title">SELECTED PROJECTS</span>
                 <h1>Case studies</h1>
+                <span class="projects-subtitleTitle" >As I am unable to show client projects, I am displaying some of my other work instead</span>
               </div>
             </v-card-title>
           </v-card>
         </v-flex>
         <v-flex xl12>
-          <v-layout wrap>
+          <v-layout wrap justify-space-between class="case-studies">
             <CaseStudies
               :key="project.id"
               :id="project.id"
@@ -175,5 +176,11 @@ export default {
 <style lang="scss" scoped>
 .row-pad{
   padding:50px 0 200px 0;
+}
+
+.projects-subtitleTitle{
+  font-size:1.1rem;
+  font-family: Helvetica-Regular;
+  color:#a7a7a7
 }
 </style>

@@ -29,6 +29,9 @@ export default {
         script: [{
                 src: "https://code.jquery.com/jquery-3.6.0.min.js"
             },
+            {
+                src: "/js/hotjar.js"
+            },
             // {
             //     src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
             // },

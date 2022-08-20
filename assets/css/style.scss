@@ -398,7 +398,15 @@ transform: scale(1);
     background-position: 90% -90% !important;
 }
 
+.case-studies a:nth-child(1) .projectcontaineractive {
+    padding-right: 20px;
+}
+
 @media only screen and (max-device-width: 660px) {
+    .case-studies a:nth-child(1) .projectcontaineractive {
+        padding-right: 0;
+        padding-bottom: 20px
+    }
     .logo {
         padding: 0;
     }

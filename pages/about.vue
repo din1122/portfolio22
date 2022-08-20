@@ -7,7 +7,7 @@
 "
         xs10
         lg7
-        style="height:110vh; display:grid;"
+        style="height:100vh; display:grid; align-content: space-evenly;"
       >
         <div>
           <span class="span-title mb-4">A FEW WORD ABOUT ME</span>
@@ -17,16 +17,28 @@
             meaningful experiences.
           </h3>
           <p class="pt-4">
-            Over the last 6 years, I have been developing my designing skill as
-            well as my developer skills for web application and user
-            interactive&experience subjects in particular. In my spare time, I
-            enjoy playing the piano and guitar, drawing and travel nature and
-            look for interesting cultures to explore and get inspired from.
+            Over the last 6 years, I have been developing my skill as a product designer through books, courses, clients and users of course.
+            I've been exploring businesses positions, learning the fundamentals of various roles.
+            My focus is to create user experiences that will produce value. in my spare time, I enjoy creating 3D art, drawing and travel.
           </p>
+            <a style="" class="resume" href="/Resume.pdf">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-4 -2 24 24" width="24" fill="currentColor"><path d="M3 0h10a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3zm0 2a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H3zm2 1h6a1 1 0 0 1 0 2H5a1 1 0 1 1 0-2zm0 12h2a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2zm0-4h6a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2zm0-4h6a1 1 0 0 1 0 2H5a1 1 0 1 1 0-2z"></path></svg>
+            </div>
+            <span>
+            Resume
+            </span>
+            </a>
         </div>
+          <v-row >
+            <div class="ma-auto">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -8 24 24" width="32" fill="currentColor"><path d="M7.071 5.314l4.95-4.95a1 1 0 1 1 1.414 1.414L7.778 7.435a1 1 0 0 1-1.414 0L.707 1.778A1 1 0 1 1 2.121.364l4.95 4.95z"></path></svg>
+        </div>
+      </v-row>
       </v-flex>
+
       <v-flex xs12 pt-5>
-        <v-img src="https://picsum.photos/1500/" max-height="400"></v-img>
+        <v-img src="/3d.png"></v-img>
       </v-flex>
       <v-flex lg7  xs12 ma-auto align-center style="height:95vh; display:grid;">
         <v-row class="justify-space-between flex-wrap d-flex flex-column flex-md-row">
@@ -47,7 +59,7 @@
                   TOOLS I USE
               </span>
               <p class="services-text">
-             Figma / Blender / Miro / Adobe XD / Photoshop / Illustrator / InDesign / After Effecs / Figma / Blender / Miro
+             Figma / Miro / Blender / Illustrator / InDesign / After Effect / Photoshop
               </p>
             </v-card>
           </v-col>
@@ -71,7 +83,7 @@
                 TOOLS I USE
               </span>
               <p class="services-text">
-                  CSS / HTML / SCSS / JQuary / JavaScript / Vuejs / Vuex / Nuxtjs
+                  CSS / HTML / SCSS / JQuery / JavaScript / Vuejs / Vuex / Nuxtjs
                 / GSPA Tweenmax / Nginx / Webpack / Headless CMS / WebFlow / Wordpress
               </p>
             </v-card>
@@ -135,5 +147,22 @@ h2 {
 }
 .row-pad{
   padding:150px 0 150px 0;
+}
+.resume{
+  display:flex;
+  flex-direction:row;
+  color:#0f141e;
+  transition: .2s ease-in-out;
+}
+.resume>div{
+  padding-right:4px;
+}
+.resume:hover>span{
+  color:#919191;
+   transition: .2s ease-in-out;
+}
+.resume:hover>div>svg{
+  fill:#919191;
+    transition: .2s ease-in-out;
 }
 </style>

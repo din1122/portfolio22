@@ -88,9 +88,9 @@ export default {
   data() {
     return {
       socials: [
-        { title: "Dirbble", src: "https://dribbble.com/DinAshkenazi" },
+        { title: "Linkedin", src: "https://www.linkedin.com/in/din-ashkenazi-622b89141/" },
+        { title: "Dribbble", src: "https://dribbble.com/DinAshkenazi" },
         { title: "Instagram", src: "https://www.instagram.com/dinashkenazi/" },
-        { title: "Behance", src: "#" },
       ],
       projects: [
         { title: "Home", src: "/" },

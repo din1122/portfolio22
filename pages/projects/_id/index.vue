@@ -2,20 +2,53 @@
   <div>
     <v-container fluid pa-0>
       <v-img v-bind:src="cover" max-width="100%" max-height="400">
-        <v-col cols="10" class="pa-0 ma-auto d-flex flex-column justify-center fill-height">
+        <v-col cols="8" class="pa-0 ma-auto d-flex flex-column justify-center fill-height">
           <div style="padding:70px 0 60px 0;">
             <span class="span-title" style="color:white;">CASE STUDY</span>
             <h3 style="color:white;">{{ title }}</h3>
           </div>
         </v-col>
       </v-img>
-    </v-container>
-    <v-flex  md10 sm11 xs10 ma-auto class="pt-5">
-      <v-container class="case-study-container pa-0" fluid align-center style="">
+
+
+    <v-flex xl9 md10 sm11 ma-auto>
+      <v-row class="row-pad-tp">
+        <v-flex xs10 sm6 ma-auto>
+                  <span class="span-title">OVERVIEW</span><br />
+                    <div class=" rich-text">
+                  <p>
+                    {{ content1 }}
+                  </p>
+                  <br />
+                  <p class="pb-0">
+                    {{ content2 }}
+                  </p>
+                </div>
+
+            <div style="padding:30px 0 30px 0">
+                  <span class="span-title">MY ROLE</span><br />
+                  <span class="project-details">{{ role }} </span>
+                </div>
+                <div style="padding:30px 0 30px 0">
+                  <span class="span-title">YEAR</span><br />
+                  <span class="project-details">{{ year }}</span>
+                </div>
+                <div style="padding:30px 0 30px 0">
+                  <span class="span-title">PROJECT TYPE</span><br />
+                  <span class="project-details">{{ projectType }}</span>
+                </div>
+                <div style="padding:30px 0 30px 0">
+                  <span class="span-title">LINK</span><br />
+                  <a :href="website">
+                    <span class="link project-details">{{ title }}</span></a>
+                </div>
+        </v-flex>
+      </v-row>
+    </v-flex>
+        </v-container>
+<!--
         <v-layout wrap align-center>
-          <v-row class="ma-0">
-            <v-flex xs6>
-              <div class="p-0 d-flex flex-column">
+            <v-flex xs6 sm6 ma-auto>
                 <div style="padding:30px 0 30px 0">
                   <span class="span-title">MY ROLE</span><br />
                   <span class="project-details">{{ role }} </span>
@@ -33,7 +66,6 @@
                   <a :href="website">
                     <span class="link project-details">{{ title }}</span></a>
                 </div>
-              </div>
             </v-flex>
             <v-flex xs12 sm4>
               <div style="padding:30px 0 30px 0">
@@ -50,13 +82,10 @@
               </div>
 
             </v-flex>
-          </v-row>
 
-        </v-layout>
+        </v-layout> -->
 
-      </v-container>
       <!-- end of xl9 -->
-    </v-flex>
 
     <v-flex xl9 md10 sm11 ma-auto>
       <!-- CHALLENGE -->
@@ -156,6 +185,8 @@
 </script>
 
 <style lang="scss">
+
+
   .project-details {
     word-break: normal;
   }
@@ -208,7 +239,9 @@
   .row-pad-sections {
     padding: 150px 0 150px 0;
   }
-
+.row-pad-tp{
+  padding:100px 0 0 0 ;
+}
   .seperator {
     background: #ECECEC;
   }

@@ -5,9 +5,9 @@
       <v-col cols="12" class="align-center row-pad-sections seperator" id="define"  >
         <h1 class="text-center" id="define">Define</h1>
       </v-col>
-      <v-col cols="11" class="ma-auto">
-        <v-row class="row-pad-lg">
-          <v-flex xs12 lg4 class="pe-5">
+      <v-col cols="5" class="ma-auto">
+        <v-row class="row-pad">
+          <v-flex xs12 lg12 class="pe-5">
             <h2 class="pb-5">Webapp Sitemap</h2>
             <p class="rich-text">
               At the start of the project, I decided to create a sitemap so I could better understand the user paths and
@@ -18,15 +18,15 @@
             </p>
             <br><br>
           </v-flex>
-          <v-flex lg7 offset-lg1 xs12 d-flex justify-center>
+          <v-flex lg12 xs12 d-flex justify-center>
             <v-img style="width:100%; max-width:100%;" src="/ntms/sitemap.jpg" alt=""  />
           </v-flex>
         </v-row>
       </v-col>
-      <v-flex xl9 md10 sm11  ma-auto>
+      <v-flex xl10 md10 sm11  ma-auto>
         <v-row class="row-pad">
           <v-flex xs10 lg6 ma-auto>
-            <h2 class="pb-5">Webapp Userflow</h2>
+            <h2 class="pb-5">Webapp User flow</h2>
             <p class="rich-text">
               I started by mapping out the user's steps to see how I cloud to simplify their journey on the platform.
               <br><br>
@@ -45,9 +45,9 @@
           <span class="pt-5 ma-auto">WEBAPP USERFLOW</span>
         </v-flex>
       </v-col>
-      <v-col cols="11" class="ma-auto">
+      <v-col cols="5" class="ma-auto">
         <v-row class="row-pad-lg">
-          <v-flex lg4 xs12 class="pe-5">
+          <v-flex lg12 xs12 class="pe-5">
             <h2 class="pb-5">Mobile App Sitemap</h2>
             <p class="rich-text">
               I created this sitemap to understand the app structure, hierarchy, and usability. <br>
@@ -56,7 +56,7 @@
             </p>
             <br><br>
           </v-flex>
-          <v-flex lg7 offset-lg1 xs12 d-flex justify-center>
+          <v-flex lg12 xs12 d-flex justify-center>
             <img style="width:100%; max-width:100%;"  src="/ntms/app-sitemap.jpg" alt=""  >
           </v-flex>
         </v-row>
@@ -88,11 +88,11 @@
 
 
 
-      <v-col cols="11" class="ma-auto">
+      <v-col cols="5" class="ma-auto">
         <v-row class="row-pad-lg">
-          <v-flex lg4 xs12 class="pe-5 ">
+          <v-flex lg12 xs12 class="pe-5 ">
             <div class="persona-fixed d-flex align-top justify-center flex-column">
-              <h2>Personas</h2><br>
+              <h2>Proto-Personas</h2><br>
               <p class="rich-text">
                 Based on the audience research I set up <i>two personas</i>.
                 I wanted to understand the user needs, goals, and main uses of the app. <br><br>
@@ -106,23 +106,18 @@
               </ul>
             </div>
           </v-flex>
-          <v-flex lg7 offset-lg1 xs12 d-flex justify-center>
+          <v-flex lg12 xs12 d-flex justify-center>
             <img style="width:100%; max-width:100%;"  src="/ntms/Persona.jpg" class="elevation-1">
           </v-flex>
           <v-flex xs4 class="pe-5">
           </v-flex>
-          <v-flex lg7 offset-lg1 xs12 d-flex justify-center class="pt-5">
+          <v-flex lg12 xs12 d-flex justify-center class="pt-5">
             <img style="width:100%; max-width:100%;"  src="/ntms/Persona2.jpg" class="elevation-1" >
           </v-flex>
         </v-row>
       </v-col>
-      <v-col cols="12" class="align-center row-pad-sections seperator" id="branding">
-        <h1 class="text-center">Branding</h1>
-      </v-col>
-      <v-col class="d-flex justify-center align-center" style="background:#2121CC; height:100vh;">
-        <img style="width:400px; max-width:350px; height:350px;" src="/ntms/logo.svg" contain max-height="350" max-width="350" >
-      </v-col>
-      <v-flex ma-auto xs10 md6 class="row-pad-lg">
+
+      <!-- <v-flex ma-auto xs10 md6 class="row-pad-lg">
         <h2 class="pb-5">Colors</h2>
         <v-row >
           <v-col cols="6" lg="2">
@@ -201,8 +196,14 @@
             </div>
           </v-col>
         </v-row>
-      </v-flex>
-      <v-col cols="11" lg="4" class="ma-auto">
+      </v-flex> -->
+
+
+
+      <v-col cols="12" class="align-center row-pad-sections seperator" id="design">
+        <h1 class="text-center">Design</h1>
+      </v-col>
+         <v-col cols="11" lg="5" class="ma-auto row-pad">
         <h2>Wireframes</h2><br>
         <p class="rich-text">
           At the start of my design process, I created Low-fi wireframes to test different layout styles of the app.
@@ -211,14 +212,10 @@
           for example, combining the reports search page and results into one single screen.
         </p>
       </v-col>
-      <v-flex xs12 d-flex justify-center class="row-pad-lg">
+        <v-flex xs12 d-flex justify-center class="row-pad">
         <v-img style="width:100%; max-width:100%;"  src="/ntms/Wireframes.jpg" />
       </v-flex>
-
-      <v-col cols="12" class="align-center row-pad-sections seperator" id="design">
-        <h1 class="text-center">Design</h1>
-      </v-col>
-      <v-col cols="10" lg="5" class="ma-auto row-pad-lg">
+      <v-col cols="12" lg="5" class="ma-auto row-pad">
         <h2>UI Design</h2><br>
         <p class="rich-text">
           Once my wireframes were explained and tested by the client, I began designing the final screen in high-fidelity
@@ -249,20 +246,21 @@
               then can access the report of the task.<br>
             </p>
           </v-col>
-          <v-col lg="8" col="12">
+          <v-col lg="8" cols="12">
             <v-img max-width="90%" src="/ntms/dashboard.png" class="elevation-1 ml-auto" />
           </v-col>
         </v-row>
-        <v-row class="row-pad-lg ">
-          <v-col cols="12" lg="4">
+        <v-row class="row-pad-lg d-flex ">
+
+               <v-col cols="12" lg="4" class="pad-top">
             <h2>Dashboard screen B</h2><br>
             <p class="rich-text">
               This is the same dashboard but with the second graph which the user can switch.
               With this graph, the user can view only the answered questions and not answered questions.
             </p>
           </v-col>
-          <v-col cols="12" lg="4">
-            <img style="width:100%; max-width:100%;" max-width="90%" src="/ntms/dashboard-b.png" class="elevation-1  ml-auto" >
+          <v-col cols="12" lg="8">
+            <v-img max-width="90%" src="/ntms/dashboard-b.png" class="elevation-1  ml-auto" />
           </v-col>
         </v-row>
         <v-row class="row-pad-lg d-flex ">
@@ -286,7 +284,7 @@
 
           </v-col>
           <v-col cols="12" lg="8">
-            <img style="width:100%; max-width:100%;" max-width="90%" src="/ntms/report.png" class="elevation-1 ml-auto" >
+            <v-img  max-width="90%" src="/ntms/report.png" class="elevation-1 ml-auto" />
           </v-col>
         </v-row>
 
@@ -368,15 +366,15 @@
         </v-row>
 
         <v-row class="row-pad-lg">
-          <v-col cols="12" lg="4">
+          <v-col cols="12" lg="6">
             <h2>App question fill flow</h2><br>
             <p class="rich-text">
               This is a prototype flow of a new user going through fill out a table question - whether is it cleaned or
               not.
             </p>
           </v-col>
-          <v-col  cols="12" lg="4" offset-lg="4" >
-            <video autoplay loop width="100%" src="/ntms/prototype_1.mp4" class="ma-auto d-flex">
+          <v-col  cols="12" lg="6"  >
+            <video autoplay loop width="400" height="711" src="/ntms/prototype_1.mp4" class="ma-auto d-flex">
               <source src="/ntms/prototype_1.mp4" type="video/mp4">
             </video>
           </v-col>
@@ -400,6 +398,17 @@ to conclude, the project was fun to design. I enjoyed designing and defining it,
       <!-- <v-flex xs10 d-flex justify-center column class="ma-auto">
           </v-flex> -->
     </div>
+
+      <v-col class="d-flex justify-center align-center" style="background:#2121CC; height:100vh;">
+        <img style="width:400px; max-width:350px; height:350px;" src="/ntms/logo.svg" contain max-height="350" max-width="350" >
+      </v-col>
+       <v-col class="text-center">
+      <v-row class="row-pad text-center align-center justify-center">
+        <a class="h3-link" href="/panoptic/panoptic-branding-book.pdf">
+          <nuxt-link to="/projects/panoptic"> <h3>Next Project</h3></nuxt-link>
+        </a>
+      </v-row>
+    </v-col>
   </div>
 </template>
 

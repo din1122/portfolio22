@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <v-flex xl9 md10 sm11 ma-auto>
+    <v-flex xl8 md10 sm11 ma-auto>
       <v-container fluid fill-height>
         <transition>
           <div v-if="show" class="text-container">
