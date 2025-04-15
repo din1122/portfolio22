@@ -59,8 +59,8 @@
                   <span class="span-title">SELECTED PROJECTS</span>
                   <h1>Case studies</h1>
                   <span class="projects-subtitleTitle"
-                    >As I am unable to show client projects, I am displaying
-                    some of my other work instead</span
+                    >Due to confidentiality, I’ve included a selection of
+                    projects that demonstrates my design approach.</span
                   >
                 </div>
               </v-card-title>
