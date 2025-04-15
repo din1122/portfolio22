@@ -30,15 +30,6 @@ export default {
                 src: "https://code.jquery.com/jquery-3.6.0.min.js"
             },
             {
-                src: "/js/hotjar.js"
-            },
-            // {
-            //     src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
-            // },
-            // {
-            //     src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"
-            // },
-            {
                 src: "https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"
             },
             {}
