@@ -6,8 +6,8 @@ export default {
      ** Headers of the page
      */
     head: {
-        titleTemplate: "Din Ashkenazi Portfolio - UI UX & Web Designer",
-        title: "Din Ashkenazi Portfolio - UI UX & Web Designer",
+        titleTemplate: "Din Ashkenazi Portfolio - Product Designer",
+        title: "Din Ashkenazi Portfolio - Product Designer",
         meta: [{
                 charset: "utf-8"
             },
@@ -18,7 +18,7 @@ export default {
             {
                 hid: "description",
                 name: "description",
-                content: "This is my UI UX & Web design Portfolio, I have 6 years of experience of web design and developement as well as graphic design and visualization "
+                content: "This is my UI UX & Web design Portfolio, I have 6 years of experience of web design and development as well as graphic design and visualization "
             }
         ],
         link: [{
